@@ -25,6 +25,17 @@ This simulates how real ed-tech AI systems operate at scale.
 
 ---
 
+
+## 🌐 Live Demo
+
+Try the app instantly without installation:
+
+🔗 **Live App:** [LIVE DEMO](https://studentquestionclassiferbysimranq.streamlit.app/)
+
+> Enter any student question and the system will predict subject, topic, difficulty, and urgency in real time.
+
+
+---
 ## 🚀 Features
 
 - Intelligent NLP preprocessing pipeline
