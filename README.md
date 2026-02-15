@@ -94,6 +94,7 @@ Accuracy ≈ **79%**
 ## ⚠️ Limitations
 
 Due to limited dataset size and large number of subject classes, subject prediction accuracy is constrained. Increasing dataset size would significantly improve performance and generalization.
+Environment: Python 3.10+
 
 ---
 
@@ -127,6 +128,23 @@ Run UI:
 
 
 streamlit run app.py
+
+---
+
+## 📥 Dataset
+
+The dataset is not included in this repository due to size limitations.
+
+Download it here:
+https://www.kaggle.com/datasets/rtatman/questionanswer-dataset
+
+After downloading:
+
+1. Extract ZIP
+2. Move file to:
+   data/
+3. Ensure filename is:
+   S08_question_answer_pairs.txt
 
 
 ---
