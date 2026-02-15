@@ -1,100 +1,99 @@
 # 🎓 Student Question Classifier AI
 
-An intelligent NLP system that analyzes student questions and automatically predicts:
+An intelligent Natural Language Processing system that analyzes student questions and automatically predicts:
 
 ✔ Subject  
 ✔ Topic  
 ✔ Difficulty Level  
 ✔ Urgency  
 
-Built using Machine Learning + NLP pipeline engineering.
+> Built using Machine Learning, NLP pipelines, and modular AI system design.
 
 ---
 
-## 🚀 Project Overview
+## 🌍 Problem Statement
 
-Students often ask questions without specifying context, urgency, or difficulty. This system automatically classifies incoming questions so they can be:
+Students often submit questions without specifying context, urgency, or difficulty level. This creates inefficiencies in academic support systems.
 
-- routed to the correct tutor
-- prioritized by urgency
+This project solves that by automatically analyzing questions and routing them intelligently so they can be:
+
+- assigned to the right tutor
+- prioritized based on urgency
 - answered with appropriate complexity
 
-This simulates real-world AI routing systems used in ed-tech platforms.
+This simulates how real ed-tech AI systems operate at scale.
 
 ---
 
-## 🧠 Core Features
+## 🚀 Features
 
-✨ Text preprocessing pipeline  
-✨ Multi-model prediction system  
-✨ Rule-based urgency detection  
-✨ Topic inference engine  
-✨ Real-time prediction UI (Streamlit)  
-✨ Modular ML architecture  
+- Intelligent NLP preprocessing pipeline
+- Multi-model prediction system
+- Rule-based urgency detection
+- Topic inference engine
+- Real-time prediction interface (Streamlit)
+- Modular architecture for scalability
 
 ---
 
 ## 🏗 System Architecture
-User Question
-↓
-Preprocessing
-↓
-Vectorization (TF-IDF)
-↓
-ML Models
-├── Subject Classifier
-└── Difficulty Classifier
-↓
-Logic Engines
-├── Topic Mapper
-└── Urgency Detector
-↓
-Final Prediction Output
 
+```
+User Question
+      ↓
+Preprocessing
+      ↓
+Vectorization (TF-IDF)
+      ↓
+ML Models
+ ├── Subject Classifier
+ └── Difficulty Classifier
+      ↓
+Logic Engines
+ ├── Topic Mapper
+ └── Urgency Detector
+      ↓
+Final Prediction Output
+```
 
 ---
 
-## 📊 Models Used
+## 🧠 Models Used
 
 | Task | Model |
 |-----|------|
 Subject Classification | Logistic Regression |
 Difficulty Classification | Logistic Regression |
 Vectorization | TF-IDF |
-Urgency Detection | Rule-based NLP |
-Topic Detection | Mapping Engine |
+Urgency Detection | Rule-Based NLP |
+Topic Detection | Rule Mapping |
 
 ---
 
 ## 🧹 Data Processing Steps
 
-✔ Loaded dataset  
-✔ Parsed TSV format  
-✔ Selected relevant columns  
-✔ Removed null labels  
-✔ Removed duplicate questions  
-✔ Cleaned text (lowercase, punctuation removal, stopwords removal)  
+- Loaded dataset
+- Parsed TSV format
+- Selected relevant columns
+- Removed null labels
+- Removed duplicate questions
+- Cleaned text (lowercase, punctuation removal, stopwords removal)
 
 ---
 
-## 📈 Performance
+## 📊 Performance
 
-### Difficulty Model
-Accuracy ≈ **88%**
-
-### Subject Model
-Accuracy ≈ **61%**  
-(After duplicate removal — realistic performance)
-
-### Topic Model
-Accuracy ≈ **79%**
+**Difficulty Model Accuracy:** ~88%  
+**Subject Model Accuracy:** ~61% *(after duplicate removal — realistic performance)*  
+**Topic Model Accuracy:** ~79%
 
 ---
 
 ## ⚠️ Limitations
 
 Due to limited dataset size and large number of subject classes, subject prediction accuracy is constrained. Increasing dataset size would significantly improve performance and generalization.
-Environment: Python 3.10+
+
+**Environment:** Python 3.10+
 
 ---
 
@@ -103,8 +102,9 @@ Environment: Python 3.10+
 - Transformer models (BERT)
 - Larger dataset
 - Context-aware difficulty prediction
-- Tutor recommendation engine
-- Deployment API
+- Tutor recommendation system
+- API deployment
+- Confidence score output
 
 ---
 
@@ -112,67 +112,66 @@ Environment: Python 3.10+
 
 Install dependencies:
 
-
+```
 pip install -r requirements.txt
-
+```
 
 Train models:
 
-
+```
 python src/train_vectorizer.py
 python src/train.py
 python src/train_subject.py
+```
 
+Run interface:
 
-Run UI:
-
-
+```
 streamlit run app.py
+```
 
 ---
 
 ## 📥 Dataset
 
-The dataset is not included in this repository due to size limitations.
+Dataset is not included due to size limitations.
 
-Download it here:
+Download here:  
 https://www.kaggle.com/datasets/rtatman/questionanswer-dataset
 
 After downloading:
 
+```
 1. Extract ZIP
-2. Move file to:
-   data/
-3. Ensure filename is:
-   S08_question_answer_pairs.txt
-
+2. Move file into → data/
+3. Rename file → S08_question_answer_pairs.txt
+```
 
 ---
 
 ## 📁 Project Structure
 
-
-
+```
 project/
 │
 ├── models/
 ├── data/
 ├── src/
-│ ├── preprocess.py
-│ ├── train.py
-│ ├── train_subject.py
-│ ├── topic_mapper.py
-│ ├── urgency_mapper.py
-│ └── predict.py
+│   ├── preprocess.py
+│   ├── train.py
+│   ├── train_subject.py
+│   ├── topic_mapper.py
+│   ├── urgency_mapper.py
+│   └── predict.py
 │
 └── app.py
-
+```
 
 ---
 
 ## 🏁 Final Outcome
 
-This project demonstrates a complete real-world NLP pipeline including:
+This project demonstrates the complete lifecycle of a real NLP system:
 
 - data handling
 - preprocessing
@@ -181,7 +180,7 @@ This project demonstrates a complete real-world NLP pipeline including:
 - evaluation
 - deployment interface
 
-It is not just a model — it is a full AI system.
+**This is not just a model — it is a complete AI system.**
 
 ---
 
@@ -189,4 +188,3 @@ It is not just a model — it is a full AI system.
 
 **Simran Qureshi**  
 Computer Science Student | Aspiring AI Engineer
-
